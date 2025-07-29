@@ -5,41 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>STRATÉGIE TRENTE-DEUX</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    h1 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
 </head>
 <body class="text-gray-800">
+
   <section class="hero-section h-screen flex flex-col justify-center items-center text-center text-white relative">
-    <img src="logo1.jpg" alt="Logo" class="w-28 absolute top-6 right-6 z-10">
+    <img src="logo1.jpg" alt="Logo" class="w-28 h-28 rounded-full object-cover border-2 border-white absolute top-6 right-6 z-10 shadow-lg">
     <h1 class="text-4xl md:text-6xl font-bold mb-2 mt-16">STRATÉGIE TRENTE-DEUX</h1>
     <p class="text-lg md:text-2xl mb-8">Solutions créatives et durables</p>
-    <a href="#services" class="bg-white text-green-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Découvrir nos services</a>
+    <a href="#about" class="bg-white text-green-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Découvrir</a>
   </section>
 
-  <section id="services" class="py-16 fade-in">
+ <section id="about" class="relative py-32 text-white fade-in">
+  <div class="absolute inset-0 z-0">
+    <img src="skills.jpg" alt="Background" class="w-full h-full object-cover opacity-30 mix-blend-multiply">
+  </div>
+  <div class="relative z-10 container mx-auto px-6 flex flex-col justify-center items-center text-center">
+    <h3 class="text-3xl md:text-4xl font-bold mb-8 text-green-300 uppercase">À propos de STRATÉGIE TRENTE-DEUX</h3>
+    <div class="max-w-3xl text-lg leading-relaxed space-y-5">
+      <p>
+        Fondée en mars 2021, STRATÉGIE TRENTE-DEUX est une société marocaine dynamique basée à Essaouira,
+        opérant dans les domaines de l’accueil, du gardiennage, du nettoyage, du bien-être et du jardinage.
+      </p>
+      <p>
+        Avec une équipe de 20 collaborateurs passionnés, nous proposons des solutions durables,
+        personnalisées et créatives pour les particuliers et les entreprises.
+      </p>
+      <p>
+        Notre force repose sur l'excellence opérationnelle, la réactivité et la satisfaction client.
+        Nous visons à créer un impact positif, humain et professionnel à travers chacun de nos services.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <section id="services" class="py-20 bg-gray-100 fade-in">
     <div class="container mx-auto px-4">
-      <h3 class="text-2xl font-bold mb-8 text-center">Nos Services</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="service-card">
-          <h4 class="service-title">Accueil</h4>
-          <p>Organisation complète de l’accueil de vos invités pour vos événements.</p>
+      <h3 class="text-3xl font-bold mb-12 text-center text-green-800 uppercase">Nos Services</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <div class="service-card fade-in">
+          <img src="accueil.jpg" alt="Accueil" class="service-icon">
+          <div>
+<!-- /*Acceil* -->
+            <a href="acceuil4.html" class="service-title">Accueil</a>
+            <p>
+              Nos hôtesses assurent un accueil chaleureux, professionnel et organisé lors de vos événements.
+              De la gestion des entrées à l'accompagnement des invités, nous prenons en charge tous les détails pour garantir une première impression réussie.
+            </p>
+          </div>
         </div>
-        <div class="service-card">
-          <h4 class="service-title">Gardiennage</h4>
-          <p>Agents expérimentés pour la sécurité de vos lieux privés ou publics.</p>
+        
+        <div class="service-card fade-in">
+          <img src="gardiennage.jpg" alt="Gardiennage" class="service-icon">
+          <div>
+<!-- /*Gardiennage* -->
+            <a href="gardiennage4.html" class="service-title">Gardiennage </a>
+            <p>
+              Nous fournissons des agents de sécurité expérimentés pour protéger vos biens, lieux publics ou privés.
+              Que ce soit dans une villa, un immeuble ou un événement, notre équipe veille 24/7 avec rigueur et discrétion.
+            </p>
+          </div>
         </div>
-        <div class="service-card">
-          <h4 class="service-title">Nettoyage</h4>
-          <p>Service de nettoyage à domicile et en entreprise, femmes de ménage qualifiées.</p>
+
+        <div class="service-card fade-in">
+          <img src="nettoyage.jpg" alt="Nettoyage" class="service-icon">
+          <div>
+<!-- /*Nettoyage* -->
+            <a href="nettoyage3.html"   class="service-title">Nettoyage</a>
+            <p>
+              Nous assurons des prestations de nettoyage de haute qualité à domicile ou en entreprise.
+              Notre personnel qualifié utilise des produits adaptés pour garantir hygiène, propreté et satisfaction.
+            </p>
+          </div>
         </div>
-        <div class="service-card">
-          <h4 class="service-title">Jardinage</h4>
-          <p>Création et entretien de jardins et espaces verts à Essaouira et partout au Maroc.</p>
+
+        <div class="service-card fade-in">
+          <img src="jardinage.jpg" alt="Jardinage" class="service-icon">
+          <div>
+<!-- /*Jardinage* -->
+            <a href="jardinage3.html"     class="service-title">Jardinage</a>
+            <p>
+              De la création à l'entretien de vos espaces verts, nous transformons vos jardins en lieux agréables et esthétiques.
+              Nos jardiniers prennent soin de vos plantes, pelouses et aménagements saisonniers.
+            </p>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <footer class="bg-blue-200 text-gray-800 py-8 text-center">
+  <footer class="bg-blue-200 text-gray-800 py-10 text-center">
     <h3 class="text-2xl font-bold mb-4">Contactez-nous</h3>
     <p class="mb-2">📧 essaouiracall.std@gmail.com</p>
     <p class="mb-2">📞 +212 6 08 06 46 56</p>
@@ -47,6 +112,6 @@
     <p>&copy; 2025 STRATÉGIE TRENTE-DEUX. Tous droits réservés.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="javascript.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 const fadeIns = document.querySelectorAll('.fade-in');
 
-const observer = new IntersectionObserver(function(entries, observer) {
+const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.style.animationPlayState = 'running';
@@ -9,6 +9,6 @@ const observer = new IntersectionObserver(function(entries, observer) {
   });
 }, { threshold: 0.2 });
 
-fadeIns.forEach(fade => {
-  observer.observe(fade);
+fadeIns.forEach(el => {
+  observer.observe(el);
 });
